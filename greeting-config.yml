@@ -5,3 +5,21 @@ security:
 management:
   security:
     enabled: false # turn off securing the actuator endpoints
+	
+security:
+  basic:
+    enabled: false
+
+management:
+  security:
+    enabled: false
+
+logging: # <----New sections below
+  level:
+    io:
+      pivotal: DEBUG
+
+greeting:
+  displayFortune: false
+
+quoteServiceURL: http://quote-service-dev.cfapps.io/quote
